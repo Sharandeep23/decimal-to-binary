@@ -1,3 +1,4 @@
+// Selecting ELements
 const numEl = document.querySelector("#number");
 const resultEl = document.querySelector("#result");
 
