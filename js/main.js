@@ -3,8 +3,9 @@ const numEl = document.querySelector("#number");
 const resultEl = document.querySelector("#result");
 
 document.querySelector("#submit").addEventListener("click", (e) => {
-    // Do nothing if input is empty
-    if (!numEl.value) return;
+    // Do nothing if input is empty or less than 0 or has decimals
+    if (!numEl.value || numEl.value < 0 || Number(numEl.value) !== parseInt(numEl.value))
+        return;
 
     // Preventing the default behaviour of forms
     e.preventDefault();
@@ -15,7 +16,4 @@ document.querySelector("#submit").addEventListener("click", (e) => {
 
     // making resultEL visible
     resultEl.style.visibility = "visible";
-
-    // Reseting form field
-    numEl.value = "";
 });

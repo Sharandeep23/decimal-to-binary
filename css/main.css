@@ -197,6 +197,7 @@ iframe {
 }
 
 .wrap-contact2 {
+    position: relative;
     width: 790px;
     background: #fff;
     border-radius: 10px;
@@ -394,6 +395,13 @@ textarea.input2 + .focus-input2::after {
 h1#result {
     word-wrap: break-word;
     visibility: hidden;
+}
+
+/* Disclaimer */
+small {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
 }
 /*------------------------------------------------------------------
 [ Responsive ]*/
